@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Pooja N</title>
+  <meta name="description" content="Get in touch with Pooja N by email, GitHub, LinkedIn, or the contact form." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/contact.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pooja N — Portfolio" />
+  <meta property="og:title" content="Contact | Pooja N" />
+  <meta property="og:description" content="Get in touch with Pooja N by email, GitHub, LinkedIn, or the contact form." />
+  <meta property="og:url" content="https://example.com/contact.html" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+</head>
+<body>
+  <!-- Skip link must be the first focusable element on the page -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        Pooja N <span class="brand-mark" aria-hidden="true">ISE</span>
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        Menu
+      </button>
+
+      <!-- Native <nav> landmark; no extra ARIA role needed -->
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="page-title">
+      <div class="wrap">
+        <span class="section-tag">Get in touch</span>
+        <h1 id="page-title">Contact</h1>
+        <p class="hero-lede">Reach out directly or use the form below &mdash; both go to the same inbox.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="contact-details-heading">
+      <div class="wrap grid grid-2">
+        <div>
+          <h2 id="contact-details-heading">Direct contact</h2>
+          <address class="contact-list">
+            <p><strong>Email:</strong> <a href="mailto:poojan80500@gmail.com">poojan80500@gmail.com</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/pooja80-n">github.com/pooja80-n</a></p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pooja-n-74a72934a/">linkedin.com/in/pooja-n</a></p>
+          </address>
+        </div>
+
+        <div>
+          <h2 id="contact-form-heading">Send a message</h2>
+
+          <div id="form-status" class="form-status" aria-live="polite"></div>
+
+          <form id="contact-form" novalidate aria-labelledby="contact-form-heading">
+            <div class="field">
+              <label for="name">Full name <span class="required-mark" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                required
+                aria-required="true"
+                aria-describedby="name-error"
+                aria-invalid="false"
+              />
+              <p class="field-error" id="name-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email address <span class="required-mark" aria-hidden="true">*</span></label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                required
+                aria-required="true"
+                aria-describedby="email-hint email-error"
+                aria-invalid="false"
+              />
+              <p class="field-hint" id="email-hint">We&rsquo;ll only use this to reply to you.</p>
+              <p class="field-error" id="email-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="subject">Subject <span class="required-mark" aria-hidden="true">*</span></label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                autocomplete="off"
+                required
+                aria-required="true"
+                aria-describedby="subject-error"
+                aria-invalid="false"
+              />
+              <p class="field-error" id="subject-error" role="alert"></p>
+            </div>
+
+            <div class="field">
+              <label for="message">Message <span class="required-mark" aria-hidden="true">*</span></label>
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                aria-required="true"
+                aria-describedby="message-error"
+                aria-invalid="false"
+              ></textarea>
+              <p class="field-error" id="message-error" role="alert"></p>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-note">&copy; <span id="year">2026</span> Pooja N. Built with semantic HTML5 and CSS.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="https://github.com/pooja80-n">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/pooja-n-74a72934a/">LinkedIn</a></li>
+          <li><a href="mailto:poojan80500@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Pooja N</title>
+  <meta name="description" content="About Pooja N: education at Sai Vidya Institute of Technology, certifications, and ongoing activities." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.com/about.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Pooja N — Portfolio" />
+  <meta property="og:title" content="About | Pooja N" />
+  <meta property="og:description" content="About Pooja N: education at Sai Vidya Institute of Technology, certifications, and ongoing activities." />
+  <meta property="og:url" content="https://example.com/about.html" />
+  <meta name="twitter:card" content="summary" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+</head>
+<body>
+  <!-- Skip link must be the first focusable element on the page -->
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html">
+        Pooja N <span class="brand-mark" aria-hidden="true">ISE</span>
+      </a>
+
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        Menu
+      </button>
+
+      <!-- Native <nav> landmark; no extra ARIA role needed -->
+      <nav class="site-nav" id="primary-navigation" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section aria-labelledby="page-title">
+      <div class="wrap">
+        <span class="section-tag">Profile</span>
+        <h1 id="page-title">About</h1>
+        <p class="hero-lede">I&rsquo;m a third-year Information Science &amp; Engineering student at Sai Vidya
+        Institute of Technology, Bengaluru, with a growing interest in full-stack web development. I enjoy
+        learning new technologies, building projects, and exploring how technology can be used to solve
+        real-world problems.</p>
+        <p class="hero-lede">I&rsquo;m currently developing my skills in web development and continuously
+        learning through hands-on projects and experimentation. I&rsquo;m always looking for opportunities to
+        learn, improve my technical skills, and grow as I continue my journey in technology.</p>
+      </div>
+    </section>
+
+    <section aria-labelledby="education-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">Record entry</span>
+          <h2 id="education-heading">Education</h2>
+        </div>
+        <div class="record-card">
+          <h3>Bachelor of Engineering (B.E.), Information Science and Engineering</h3>
+          <p>Sai Vidya Institute of Technology, Bengaluru</p>
+          <ul class="tag-list">
+            <li class="record-label">Expected graduation: 2028</li>
+            <li class="record-label">CGPA: 8.7</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="certifications-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">Record entry</span>
+          <h2 id="certifications-heading">Certifications</h2>
+        </div>
+        <ul class="grid grid-2 card-list">
+          <li class="record-card">
+            <h3>Fundamentals of Generative AI</h3>
+            <p>AWS</p>
+          </li>
+          <li class="record-card">
+            <h3>Generative AI Mastermind</h3>
+            <p>OutSkill</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section aria-labelledby="experience-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="section-tag">Record entry</span>
+          <h2 id="experience-heading">Experience &amp; activities</h2>
+          <p>A running log of clubs, hackathons, internships, and workshops. Entries are added as they
+          are confirmed.</p>
+        </div>
+        <ul class="timeline">
+          <li>
+            <h3>AI Club / AIGNITE</h3>
+            <p class="placeholder-note">Active member of the college AI club, participating in AI-focused workshops, discussions, and collaborative learning sessions.</p>
+          </li>
+          <li>
+            <h3>Hackathons</h3>
+            <p class="placeholder-note">Participated in college-level hackathons, building rapid prototypes and collaborating with cross-functional teams.</p>
+          </li>
+          <li>
+            <h3>Internships</h3>
+            <p class="placeholder-note">Seeking internship opportunities in web development and full-stack engineering.</p>
+          </li>
+          <li>
+            <h3>Technical events &amp; workshops</h3>
+            <p class="placeholder-note">Active participant in technical events and workshops, exploring emerging technologies and expanding practical knowledge. Engaging in hands-on learning sessions to develop technical skills and stay updated with industry trends.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="footer-note">&copy; <span id="year">2026</span> Pooja N. Built with semantic HTML5 and CSS.</p>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="https://github.com/pooja80-n">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/pooja-n-74a72934a/">LinkedIn</a></li>
+          <li><a href="mailto:poojan80500@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="js/main.js" defer></script>
+</body>
+</html>
